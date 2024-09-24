@@ -14,7 +14,7 @@ def read_corpus(filename):
             words += re.findall(r'\w+',word.lower())
     return words
 
-corpus = read_corpus(r'https://github.com/PrasadDinde/Automatic-spell-checker/blob/2040836d638b78212fd1ec6e492ffada77633958/big.txt')
+corpus = read_corpus(r'big.txt')
 
 vocab = set(corpus)
 len(vocab)
